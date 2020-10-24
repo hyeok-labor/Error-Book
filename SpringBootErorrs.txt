@@ -1,4 +1,9 @@
 error: spring you have an error in your sql syntax check the manual that corresponds
-FILES (FNO, BNO, FILENAME, FILEORINAME, FILEURL) 에서 parameter에 대한 에러가 나왔음.
+==> FILES (FNO, BNO, FILENAME, FILEORINAME, FILEURL) 에서 parameter에 대한 에러가 나왔음.
 parameter 설정하는 부분에서 에러인가 싶어서 찾아봤더니 FILEORINAME과 FILEURL사이에
 콤마 실종. 에러 해결 
+
+error: A component required a bean named 'com.example.demo.board.mapper.
+	CommentMapper' that could not be found.
+==> component 'com.example....mapper' 에 해당하는 파일을 매퍼에서 매치 못해서 발생
+패키지 명을 확인하고 수정하니 이상무. 에러 해결
