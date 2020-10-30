@@ -7,3 +7,9 @@ error: A component required a bean named 'com.example.demo.board.mapper.
 	CommentMapper' that could not be found.
 ==> component 'com.example....mapper' 에 해당하는 파일을 매퍼에서 매치 못해서 발생
 패키지 명을 확인하고 수정하니 이상무. 에러 해결
+
+error: Column count doesn't match value count at row 1
+### The error may exist in com/example/demo/board/mapper/UserMapper.xml
+==> 데이터베이스를 insert 하는 과정에서 발생, 컬럼명 해당 VALUES 가 매치가 되지 않아
+발생하는 에러. 이 외에도 데이터베이스 컬럼과 BoardVO의 변수명이 맞지 않아 생긴
+에러도 있었음. 컬럼명 꼭 확인!
