@@ -13,3 +13,10 @@ error: Column count doesn't match value count at row 1
 ==> 데이터베이스를 insert 하는 과정에서 발생, 컬럼명 해당 VALUES 가 매치가 되지 않아
 발생하는 에러. 이 외에도 데이터베이스 컬럼과 BoardVO의 변수명이 맞지 않아 생긴
 에러도 있었음. 컬럼명 꼭 확인!
+
+error:java was started but returned exit code=-805306369
+이클립스 오류이자, 이클립스 기반으로 실행되는 STS에서도 발생하는 에러이다.
+로딩 이후 initializing 과정 중 진행이 되지 않고 조작시 시스템이 죽는 현상이 발생했다.
+프로그램이 (응답없음) 상태에서 강제로 종료 했을 시에 위와 같은 에러코드가 나온다.
+==> 기존에 사용중이던 workspace명을 변경 후 프로그램 실행한다.
+       실행 프로그램 위치를 cmd에서 .exe -clean 으로 실행 시키면 해결됨.
